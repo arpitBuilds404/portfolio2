@@ -6,11 +6,10 @@
 }
 
 body {
-  background:rgb(232, 212, 181);
+  background:rgb(255, 255, 255);
 
 }
 
-/* Header */
 header {
   background:rgb(28, 28, 176);
   color: white;
@@ -25,11 +24,6 @@ nav a {
   font-weight: bold;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* about */
 #about {
   text-align: center;
   padding: 40px 20px;
@@ -41,8 +35,6 @@ nav a:hover {
   border-radius: 50%;
   margin: 20px 0;
 }
-
-/* Skills */
 #skills {
   background: white;
   padding: 40px 20px;
@@ -61,19 +53,19 @@ nav a:hover {
 }
 
 #skills th {
-  background:rgb(208, 185, 151);
+  background:rgb(30, 73, 215);
   color: white;
 }
 
-/* Projects */
+
 #projects {
-  background: rgb(232, 212, 181);
+
   padding: 40px 20px;
   text-align: center;
 }
 
 .project {
-  background: white;
+  background: rgb(242, 240, 240);
   margin: 15px auto;
   padding: 20px;
   width: 60%;
@@ -120,17 +112,65 @@ form button {
 form button:hover {
   background:rgb(218, 176, 113);
 }
-
-/* Footer */
-footer {
-  background: rgb(240, 211, 168);
-  color: white;
-  text-align: center;
-  padding: 15px 0;
+hr {
+  border: none;
+  height: 2px;
+  background-color: #0047ab;
+  margin: 30px 0;
+  width: 100%;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
 }
 
-.back {
+th, td {
+  border: 1px solid blue;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: blue;
   color: white;
+}
+
+form table {
+  width: 100%;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid blue;}
+  button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0047ab;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: blue;
+}
   
-  font-weight: bold;
+  
+  .back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: blue;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.back-to-top:hover {
+  background-color: blue;
+  transform: scale(1.1);
+}
+
